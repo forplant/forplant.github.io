@@ -36,3 +36,25 @@
     });
   }
 })();
+const searchForm = document.getElementById("site-search");
+const searchInput = document.getElementById("site-search-input");
+
+if (searchForm && searchInput) {
+    searchForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const searchWord = searchInput.value.trim();
+
+        if (!searchWord) {
+            alert("검색어를 입력해 주세요.");
+            searchInput.focus();
+            return;
+        }
+
+        const found = window.find(searchWord);
+
+        if (!found) {
+            alert("검색 결과가 없습니다.");
+        }
+    });
+}
