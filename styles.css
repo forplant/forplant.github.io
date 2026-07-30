@@ -130,8 +130,8 @@ button, input, textarea { font: inherit; }
 .site-footer { background: #061426; color: rgba(255,255,255,.65); padding: 45px 0; }
 .footer-inner { display: flex; justify-content: space-between; gap: 50px; align-items: center; }
 .footer-inner img { width: 135px; background: transparent; border-radius: 0; padding: 0; }
-.footer-inner p { margin: 4px 0; font-size: 13px; text-align: right; }
-
+.footer-inner > div { flex: 1; text-align: center; }
+.footer-inner p { margin: 4px 0; font-size: 13px; text-align: center; }
 @media (max-width: 960px) {
   .menu-button { display: block; }
   .main-nav { display: none; position: absolute; top: 82px; left: 0; right: 0; background: white; padding: 14px 20px 24px; border-bottom: 1px solid var(--line); flex-direction: column; gap: 0; align-items: stretch; }
