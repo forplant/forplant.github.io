@@ -100,14 +100,14 @@ button, input, textarea { font: inherit; }
 .project-content p { margin: 0; color: var(--muted); font-size: 15px; }
 .project-type { color: var(--lime) !important; font-weight: 800; font-size: 12px !important; letter-spacing: .08em; }
 
-.contact { background: linear-gradient(120deg, #0d4f83, #10253f 72%); color: white; }
+.contact { background: #f4f7f5; color: #142238; }
 .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
-.contact .section-kicker { color: #57c7ff; }
+.contact .section-kicker { color: #07833f; }
 .contact-intro h2 { font-size: clamp(36px, 4vw, 54px); }
-.contact-intro > p:not(.section-kicker) { color: rgba(255,255,255,.72); }
+.contact-intro > p:not(.section-kicker) { color: #5f6f7f; }
 .contact-direct { display: grid; gap: 12px; margin-top: 36px; }
-.contact-direct a { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid rgba(255,255,255,.18); padding: 16px 0; }
-.contact-direct span { color: rgba(255,255,255,.6); }
+.contact-direct a { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid #d8dfda; padding: 16px 0; color: #142238; }
+.contact-direct span { color: #5f6f7f; }
 .inquiry-form { background: white; color: var(--ink); border-radius: 16px; padding: 34px; box-shadow: 0 20px 60px rgba(0,0,0,.22); }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .inquiry-form label { display: grid; gap: 8px; margin-bottom: 16px; font-weight: 700; font-size: 14px; }
