@@ -186,17 +186,21 @@
         </div>
 
         <form class="inquiry-form" id="inquiry-form">
-          <div class="field-row">
-            <label>회사명<input type="text" name="company" autocomplete="organization"></label>
-            <label>담당자<input type="text" name="name" autocomplete="name" required></label>
-          </div>
-          <div class="field-row">
-            <label>연락처<input type="tel" name="phone" autocomplete="tel" required></label>
-            <label>이메일<input type="email" name="email" autocomplete="email"></label>
-          </div>
-<label>문의내용<textarea name="message" rows="5" required placeholder="공사 위치와 희망 일정, 필요한 내용을 편하게 남겨주세요."></textarea></label>
-          <button class="button button-primary form-submit" type="submit">이메일로 문의 보내기</button>
-          <p class="form-note">버튼을 누르면 사용 중인 이메일 프로그램이 열립니다.</p>
+<div class="field-row">
+    <label>회사명 / 기관명<input type="text" name="company" autocomplete="organization"></label>
+    <label>담당자명 (필수)<input type="text" name="name" autocomplete="name" required></label>
+</div>
+
+<div class="field-row">
+    <label>연락 가능한 번호 (필수)<input type="tel" name="phone" autocomplete="tel" required></label>
+    <label>이메일 주소<input type="email" name="email" autocomplete="email"></label>
+</div>
+
+<label>문의하실 내용<textarea name="message" rows="5" required placeholder="공사 위치와 희망 일정, 필요한 내용을 편하게 남겨주세요."></textarea></label>
+
+<button class="button button-primary form-submit" type="submit">이메일로 상담 문의하기</button>
+
+<p class="form-note">버튼을 누르면 이메일 작성 화면이 열립니다. 내용을 확인한 후 전송해 주세요.</p>
         </form>
       </div>
     </section>
