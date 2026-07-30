@@ -111,8 +111,9 @@ button, input, textarea { font: inherit; }
 .contact-intro h2 { font-size: clamp(28px, 2.4vw, 32px); line-height: 1.35; }
 .contact-intro > p:not(.section-kicker) { color: #5f6f7f; }
 .contact-direct { display: grid; gap: 12px; margin-top: 36px; }
-.contact-direct a { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid #d8dfda; padding: 16px 0; color: #142238; }
-.contact-direct span { color: #5f6f7f; }
+.contact-direct a { display: flex; justify-content: space-between; align-items: center; gap: 20px; border: 1px solid #d8dfda; border-radius: 10px; background: #ffffff; padding: 18px; color: #142238; }
+.contact-direct span { color: #405266; font-weight: 700; }
+.contact-direct strong { color: #142238; font-size: 17px; font-weight: 800; }
 .contact-process { margin-top: 32px; }
 .contact-process h3 { margin: 0 0 12px; font-size: 18px; color: #142238; }
 .process-item { border-top: 1px solid #d8dfda; padding: 14px 0; }
