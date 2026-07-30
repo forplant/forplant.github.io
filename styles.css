@@ -127,14 +127,14 @@ button, input, textarea { font: inherit; }
 .company-info dt { color: var(--muted); }
 .company-info dd { margin: 0; font-weight: 700; }
 
-.site-footer { background: #e8efea; color: #526273; padding: 45px 0; border-top: 1px solid #d7e1da; }
+.site-footer { background: #dfe8ef; color: #405266; padding: 45px 0; border-top: 1px solid #cbd7e0; }
 .footer-inner { display: flex; justify-content: space-between; gap: 50px; align-items: center; }
 .footer-inner img { width: 135px; background: transparent; border-radius: 0; padding: 0; }
 .footer-inner > div { flex: 1; text-align: center; }
 .footer-inner p { margin: 4px 0; font-size: 13px; text-align: center; }
 .footer-links { display: flex; justify-content: center; gap: 20px; margin-top: 16px; }
-.footer-links a { color: #245c43; font-size: 13px; font-weight: 700; text-decoration: none; }
-.footer-links span { color: #9aaba0; }
+.footer-links a { color: #173a5e; font-size: 13px; font-weight: 700; text-decoration: none; }
+.footer-links span { color: #9aa8b5; }
 @media (max-width: 960px) {
   .menu-button { display: block; }
   .main-nav { display: none; position: absolute; top: 82px; left: 0; right: 0; background: white; padding: 14px 20px 24px; border-bottom: 1px solid var(--line); flex-direction: column; gap: 0; align-items: stretch; }
