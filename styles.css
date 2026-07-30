@@ -129,7 +129,7 @@ button, input, textarea { font: inherit; }
 
 .site-footer { background: #061426; color: rgba(255,255,255,.65); padding: 45px 0; }
 .footer-inner { display: flex; justify-content: space-between; gap: 50px; align-items: center; }
-.footer-inner img { width: 135px; background: white; border-radius: 8px; padding: 8px; }
+.footer-inner img { width: 135px; background: transparent; border-radius: 0; padding: 0; }
 .footer-inner p { margin: 4px 0; font-size: 13px; text-align: right; }
 
 @media (max-width: 960px) {
