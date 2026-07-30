@@ -79,11 +79,11 @@ button, input, textarea { font: inherit; }
 .section-kicker { color: var(--green); }
 
 .about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; align-items: start; }
-.about-copy > p { margin-top: 0; color: var(--muted); font-size: 18px; }
+.about-copy > p { margin-top: 0; color: var(--muted); font-size: 18px; word-break: keep-all; }
 .strength-list { display: grid; gap: 14px; margin-top: 34px; }
 .strength-list > div { display: grid; grid-template-columns: 60px 1fr; gap: 20px; padding: 22px 0; border-top: 1px solid var(--line); }
 .strength-list strong { color: var(--lime); font-size: 24px; }
-.strength-list span { color: var(--muted); }
+.strength-list span { color: var(--muted); word-break: keep-all; }
 .strength-list b { display: block; color: var(--ink); margin-bottom: 3px; }
 
 .services { background: #eef2f5; }
