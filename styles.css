@@ -108,7 +108,7 @@ button, input, textarea { font: inherit; }
 .contact { background: #f8fafb; color: #142238; }
 .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
 .contact .section-kicker { color: #07833f; }
-.contact-intro h2 { font-size: clamp(36px, 4vw, 54px); }
+.contact-intro h2 { font-size: clamp(28px, 2.4vw, 32px); line-height: 1.35; }
 .contact-intro > p:not(.section-kicker) { color: #5f6f7f; }
 .contact-direct { display: grid; gap: 12px; margin-top: 36px; }
 .contact-direct a { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid #d8dfda; padding: 16px 0; color: #142238; }
