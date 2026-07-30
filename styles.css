@@ -127,7 +127,7 @@ button, input, textarea { font: inherit; }
 .company-info dt { color: var(--muted); }
 .company-info dd { margin: 0; font-weight: 700; }
 
-.site-footer { background: #dfe8ef; color: #405266; padding: 45px 0; border-top: 1px solid #cbd7e0; }
+.site-footer { background: #ffffff; color: #405266; padding: 45px 0; border-top: 1px solid #d7e1e8; }
 .footer-inner { display: flex; justify-content: space-between; gap: 50px; align-items: center; }
 .footer-inner img { width: 135px; background: transparent; border-radius: 0; padding: 0; }
 .footer-inner > div { flex: 1; text-align: center; }
