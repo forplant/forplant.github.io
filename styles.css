@@ -356,16 +356,16 @@ button, input, textarea { font: inherit; }
 }
 
 .hero-actions .button-primary {
-  background: #087a43;
+background: #15945a;
   color: #ffffff;
-  border-color: #087a43;
+border-color: #15945a;
   box-shadow: 0 8px 22px rgba(0, 110, 62, 0.3);
 }
 
 .hero-actions .button-primary:hover {
-  background: #0a9250;
+background: #1aa667;
   color: #ffffff;
-  border-color: #0a9250;
+border-color: #1aa667;
 }
 
 .hero-actions .button-outline {
