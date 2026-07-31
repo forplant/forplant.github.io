@@ -288,7 +288,10 @@ button, input, textarea { font: inherit; }
     25vw 13vh 2px rgba(195, 240, 255, 0.6),
     42vw 7vh 3px rgba(115, 205, 255, 0.5),
     17vw 32vh 2px rgba(180, 235, 255, 0.55),
-    38vw 35vh 3px rgba(130, 210, 255, 0.5);
+38vw 35vh 3px rgba(130, 210, 255, 0.5),
+5vw 18vh 2px rgba(175, 230, 255, 0.5),
+31vw 24vh 2px rgba(145, 220, 255, 0.55),
+45vw 38vh 2px rgba(185, 235, 255, 0.5);
   animation: star-twinkle-two 4.6s ease-in-out infinite;
   animation-delay: 1.2s;
 }
@@ -297,17 +300,17 @@ button, input, textarea { font: inherit; }
   0%,
   100% {
     opacity: 0.08;
-    transform: scale(0.75);
+
   }
 
   45% {
     opacity: 0.7;
-    transform: scale(1);
+
   }
 
   65% {
     opacity: 0.22;
-    transform: scale(0.85);
+
   }
 }
 
@@ -315,17 +318,17 @@ button, input, textarea { font: inherit; }
   0%,
   100% {
     opacity: 0.06;
-    transform: scale(0.7);
+
   }
 
   35% {
     opacity: 0.2;
-    transform: scale(0.85);
+
   }
 
   70% {
     opacity: 0.6;
-    transform: scale(1);
+
   }
 }
 
