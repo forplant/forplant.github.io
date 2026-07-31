@@ -253,47 +253,85 @@ button, input, textarea { font: inherit; }
     animation: none;
   }
 }
-.hero-overlay::before {
-  content: "";
+.hero-overlay::before,
+.hero-overlay::after {
   position: absolute;
-  inset: -40%;
   pointer-events: none;
-  opacity: 0;
-  background: linear-gradient(
-    115deg,
-    transparent 42%,
-    rgba(80, 190, 255, 0.08) 47%,
-    rgba(190, 240, 255, 0.55) 50%,
-    rgba(70, 170, 255, 0.12) 53%,
-    transparent 58%
-  );
-  mix-blend-mode: screen;
-  transform: translateX(-65%);
-  animation: hero-shimmer 5.5s ease-in-out infinite;
+  z-index: 0;
+  font-size: 8px;
+  line-height: 1;
+  color: rgba(185, 235, 255, 0.75);
+  filter: drop-shadow(0 0 3px rgba(65, 190, 255, 0.8));
 }
 
-@keyframes hero-shimmer {
-  0% {
-    transform: translateX(-65%);
-    opacity: 0;
-  }
+.hero-overlay::before {
+  content: "✦";
+  top: 18%;
+  left: 54%;
+  opacity: 0.15;
+  text-shadow:
+    14vw 7vh 2px rgba(170, 230, 255, 0.65),
+    30vw 3vh 3px rgba(125, 210, 255, 0.55),
+    8vw 27vh 2px rgba(190, 240, 255, 0.6),
+    34vw 25vh 3px rgba(110, 200, 255, 0.55),
+    20vw 43vh 2px rgba(180, 235, 255, 0.6);
+  animation: star-twinkle-one 3.8s ease-in-out infinite;
+}
 
-  15% {
-    opacity: 0.8;
-  }
+.hero-overlay::after {
+  content: "✧";
+  top: 28%;
+  left: 49%;
+  opacity: 0.1;
+  text-shadow:
+    10vw 4vh 2px rgba(155, 220, 255, 0.55),
+    25vw 13vh 2px rgba(195, 240, 255, 0.6),
+    42vw 7vh 3px rgba(115, 205, 255, 0.5),
+    17vw 32vh 2px rgba(180, 235, 255, 0.55),
+    38vw 35vh 3px rgba(130, 210, 255, 0.5);
+  animation: star-twinkle-two 4.6s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
 
-  60% {
-    opacity: 0.55;
-  }
-
+@keyframes star-twinkle-one {
+  0%,
   100% {
-    transform: translateX(65%);
-    opacity: 0;
+    opacity: 0.08;
+    transform: scale(0.75);
+  }
+
+  45% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+
+  65% {
+    opacity: 0.22;
+    transform: scale(0.85);
+  }
+}
+
+@keyframes star-twinkle-two {
+  0%,
+  100% {
+    opacity: 0.06;
+    transform: scale(0.7);
+  }
+
+  35% {
+    opacity: 0.2;
+    transform: scale(0.85);
+  }
+
+  70% {
+    opacity: 0.6;
+    transform: scale(1);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-overlay::before {
+  .hero-overlay::before,
+  .hero-overlay::after {
     animation: none;
   }
 }
