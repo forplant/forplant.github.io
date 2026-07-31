@@ -382,3 +382,22 @@ animation: hero-laser 6s linear infinite;
   color: #06234b;
   border-color: #eaf6ff;
 }
+.hero-actions .button-primary::after {
+  content: "→";
+  margin-left: 8px;
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.hero-actions .button-primary:hover::after {
+  transform: translateX(3px);
+}
+
+.hero-actions .button-outline::before {
+  content: "☎";
+  margin-right: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
