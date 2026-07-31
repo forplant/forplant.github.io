@@ -401,3 +401,6 @@ animation: hero-laser 6s linear infinite;
   font-size: 16px;
   line-height: 1;
 }
+.project-image {
+  object-position: center bottom !important;
+}
