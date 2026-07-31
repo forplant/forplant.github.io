@@ -232,48 +232,7 @@ button, input, textarea { font: inherit; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
   .footer-inner p { text-align: left; }
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 8% 68%, #d8f8ff 0 2px, #35bfff 3px, transparent 10px),
-    radial-gradient(circle at 18% 88%, #ffffff 0 2px, #28adff 3px, transparent 12px),
-    radial-gradient(circle at 44% 54%, #ffffff 0 2px, #36c5ff 3px, transparent 11px),
-    radial-gradient(circle at 60% 75%, #e8fbff 0 3px, #1eb6ff 4px, transparent 14px),
-    radial-gradient(circle at 72% 62%, #ffffff 0 2px, #3ac9ff 3px, transparent 12px),
-    radial-gradient(circle at 84% 48%, #eaffff 0 2px, #36b7ff 3px, transparent 11px),
-    radial-gradient(circle at 93% 78%, #ffffff 0 3px, #24a9ff 4px, transparent 15px);
-  filter:
-    drop-shadow(0 0 6px #31baff)
-    drop-shadow(0 0 14px rgba(28, 157, 255, 0.9));
-  animation: network-lights 2.8s ease-in-out infinite alternate;
-}
 
-@keyframes network-lights {
-  0% {
-    opacity: 0.3;
-    filter:
-      drop-shadow(0 0 3px #31baff)
-      drop-shadow(0 0 8px rgba(28, 157, 255, 0.5));
-  }
-
-  50% {
-    opacity: 1;
-    filter:
-      drop-shadow(0 0 10px #73dcff)
-      drop-shadow(0 0 25px rgba(22, 148, 255, 1));
-  }
-
-  100% {
-    opacity: 0.55;
-    filter:
-      drop-shadow(0 0 5px #31baff)
-      drop-shadow(0 0 15px rgba(28, 157, 255, 0.75));
-  }
-}
 
 .hero-overlay {
   animation: hero-glow 5s ease-in-out infinite alternate;
@@ -290,7 +249,6 @@ button, input, textarea { font: inherit; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero::after,
   .hero-overlay {
     animation: none;
   }
