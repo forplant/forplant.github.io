@@ -266,40 +266,27 @@ button, input, textarea { font: inherit; }
 
 .hero-overlay::before {
   content: "✦";
-  top: 18%;
-  left: 54%;
+  top: 8%;
+  left: 50%;
   opacity: 0.15;
   text-shadow:
-    14vw 7vh 2px rgba(170, 230, 255, 0.65),
-    30vw 3vh 3px rgba(125, 210, 255, 0.55),
-    8vw 27vh 2px rgba(190, 240, 255, 0.6),
-    34vw 25vh 3px rgba(110, 200, 255, 0.55),
-20vw 43vh 2px rgba(180, 235, 255, 0.6),
-3vw 12vh 2px rgba(170, 230, 255, 0.4),
-24vw 20vh 2px rgba(145, 220, 255, 0.45),
-40vw 15vh 2px rgba(185, 238, 255, 0.4),
-12vw 48vh 2px rgba(130, 210, 255, 0.38);
+    8vw 4vh 2px rgba(170, 230, 255, 0.55),
+    18vw 11vh 2px rgba(125, 210, 255, 0.5),
+    30vw 3vh 2px rgba(190, 240, 255, 0.55),
+    40vw 14vh 2px rgba(110, 200, 255, 0.5);
   animation: star-twinkle-one 3.8s ease-in-out infinite;
 }
 
 .hero-overlay::after {
   content: "✧";
-  top: 28%;
-  left: 49%;
+  top: 15%;
+  left: 55%;
   opacity: 0.1;
   text-shadow:
-    10vw 4vh 2px rgba(155, 220, 255, 0.55),
-    25vw 13vh 2px rgba(195, 240, 255, 0.6),
-    42vw 7vh 3px rgba(115, 205, 255, 0.5),
-    17vw 32vh 2px rgba(180, 235, 255, 0.55),
-38vw 35vh 3px rgba(130, 210, 255, 0.5),
-5vw 18vh 2px rgba(175, 230, 255, 0.5),
-31vw 24vh 2px rgba(145, 220, 255, 0.55),
-45vw 38vh 2px rgba(185, 235, 255, 0.5),
-7vw 42vh 2px rgba(155, 225, 255, 0.4),
-34vw 5vh 2px rgba(190, 240, 255, 0.42),
-2vw 30vh 2px rgba(135, 215, 255, 0.38),
-43vw 22vh 2px rgba(175, 232, 255, 0.4);
+    6vw 8vh 2px rgba(155, 220, 255, 0.5),
+    16vw 2vh 2px rgba(195, 240, 255, 0.55),
+    27vw 14vh 2px rgba(115, 205, 255, 0.45),
+    38vw 6vh 2px rgba(180, 235, 255, 0.5);
   animation: star-twinkle-two 4.6s ease-in-out infinite;
   animation-delay: 1.2s;
 }
