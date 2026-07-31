@@ -253,3 +253,47 @@ button, input, textarea { font: inherit; }
     animation: none;
   }
 }
+.hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 42%,
+    rgba(80, 190, 255, 0.08) 47%,
+    rgba(190, 240, 255, 0.55) 50%,
+    rgba(70, 170, 255, 0.12) 53%,
+    transparent 58%
+  );
+  mix-blend-mode: screen;
+  transform: translateX(-65%);
+  animation: hero-shimmer 5.5s ease-in-out infinite;
+}
+
+@keyframes hero-shimmer {
+  0% {
+    transform: translateX(-65%);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.8;
+  }
+
+  60% {
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: translateX(65%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-overlay::before {
+    animation: none;
+  }
+}
