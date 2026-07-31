@@ -58,6 +58,60 @@ button, input, textarea { font: inherit; }
   color: white;
   overflow: hidden;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 62%;
+  left: -45%;
+  width: 42%;
+  height: 3px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(40, 170, 255, 0.4),
+    #8ee8ff,
+    rgba(40, 170, 255, 0.4),
+    transparent
+  );
+  box-shadow:
+    0 0 8px #32baff,
+    0 0 20px rgba(30, 160, 255, 0.9),
+    0 0 40px rgba(30, 130, 255, 0.65);
+  transform: rotate(-8deg);
+  animation: hero-laser 6s ease-in-out infinite;
+}
+
+@keyframes hero-laser {
+  0% {
+    left: -45%;
+    top: 72%;
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.9;
+  }
+
+  80% {
+    opacity: 0.75;
+  }
+
+  100% {
+    left: 110%;
+    top: 42%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+    display: none;
+  }
+}
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3,20,34,.88) 0%, rgba(3,20,34,.62) 48%, rgba(3,20,34,.22) 100%); }
 .hero-content { position: relative; z-index: 1; padding: 100px 0; }
 .eyebrow, .section-kicker { margin: 0 0 18px; color: #48b6ff; letter-spacing: .2em; font-weight: 800; font-size: 13px; }
