@@ -351,3 +351,32 @@ button, input, textarea { font: inherit; }
   color: #06234b;
   border-color: #eaf6ff;
 }
+.hero-copy {
+  color: rgba(220, 235, 247, 0.88);
+}
+
+.hero-actions .button-primary {
+  background: #087a43;
+  color: #ffffff;
+  border-color: #087a43;
+  box-shadow: 0 8px 22px rgba(0, 110, 62, 0.3);
+}
+
+.hero-actions .button-primary:hover {
+  background: #0a9250;
+  color: #ffffff;
+  border-color: #0a9250;
+}
+
+.hero-actions .button-outline {
+  background: rgba(4, 28, 61, 0.5);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.hero-actions .button-outline:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  border-color: #ffffff;
+}
