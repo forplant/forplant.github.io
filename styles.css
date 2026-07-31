@@ -295,7 +295,11 @@ button, input, textarea { font: inherit; }
 38vw 35vh 3px rgba(130, 210, 255, 0.5),
 5vw 18vh 2px rgba(175, 230, 255, 0.5),
 31vw 24vh 2px rgba(145, 220, 255, 0.55),
-45vw 38vh 2px rgba(185, 235, 255, 0.5);
+45vw 38vh 2px rgba(185, 235, 255, 0.5),
+7vw 42vh 2px rgba(155, 225, 255, 0.4),
+34vw 5vh 2px rgba(190, 240, 255, 0.42),
+2vw 30vh 2px rgba(135, 215, 255, 0.38),
+43vw 22vh 2px rgba(175, 232, 255, 0.4);
   animation: star-twinkle-two 4.6s ease-in-out infinite;
   animation-delay: 1.2s;
 }
