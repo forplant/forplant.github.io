@@ -356,27 +356,26 @@ button, input, textarea { font: inherit; }
 }
 
 .hero-actions .button-primary {
-background: #15945a;
-  color: #ffffff;
-border-color: #15945a;
-  box-shadow: 0 8px 22px rgba(0, 110, 62, 0.3);
+  background: #dff3e7;
+  color: #075c36;
+  border-color: #dff3e7;
+  box-shadow: 0 8px 22px rgba(0, 110, 62, 0.18);
 }
 
 .hero-actions .button-primary:hover {
-background: #1aa667;
-  color: #ffffff;
-border-color: #1aa667;
+  background: #c8ead6;
+  color: #075c36;
+  border-color: #c8ead6;
 }
-
 .hero-actions .button-outline {
-  background: rgba(4, 28, 61, 0.5);
-  color: #ffffff;
-  border-color: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(6px);
+  background: #ffffff;
+  color: #06234b;
+  border-color: #ffffff;
+  backdrop-filter: none;
 }
 
 .hero-actions .button-outline:hover {
-  background: rgba(255, 255, 255, 0.16);
-  color: #ffffff;
-  border-color: #ffffff;
+  background: #eaf6ff;
+  color: #06234b;
+  border-color: #eaf6ff;
 }
