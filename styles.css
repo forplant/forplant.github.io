@@ -338,3 +338,16 @@ button, input, textarea { font: inherit; }
     animation: none;
   }
 }
+.hero-actions .button-primary,
+.hero-actions .button-outline {
+  background: #ffffff;
+  color: #06234b;
+  border-color: #ffffff;
+}
+
+.hero-actions .button-primary:hover,
+.hero-actions .button-outline:hover {
+  background: #eaf6ff;
+  color: #06234b;
+  border-color: #eaf6ff;
+}
