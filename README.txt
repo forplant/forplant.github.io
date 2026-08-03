@@ -7,15 +7,9 @@ FORPLANT GitHub Pages 업로드 안내
    - styles.css
    - script.js
    - assets 폴더
-   - robots.txt
-   - sitemap.xml
    - README.txt (선택)
 4. Commit changes를 누릅니다.
 5. 1~3분 후 사이트에서 Ctrl + F5로 새로고침합니다.
-
-네이버 검색 등록
-- 업로드 후 네이버 서치어드바이저에 https://www.forplant.co.kr 을 등록합니다.
-- 사이트 소유확인을 완료한 다음 sitemap.xml을 제출하고 메인 페이지 수집을 요청합니다.
 
 시공실적 추가 방법
 - 두 번째 사진: assets/project-02.jpg

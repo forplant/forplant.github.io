@@ -188,6 +188,18 @@ animation: hero-laser 6s linear infinite;
 .inquiry-form > label textarea { flex: 1; height: auto; min-height: 180px; }
 .inquiry-form input, .inquiry-form textarea { width: 100%; border: 1px solid #d8dfda; border-radius: 8px; padding: 13px 14px; outline: none; }
 .inquiry-form input:focus, .inquiry-form textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(8,114,63,.1); }
+.privacy-consent { margin: 2px 0 18px; padding-top: 16px; border-top: 1px solid #e3e8e5; }
+.privacy-consent-row { display: grid; grid-template-columns: 18px auto 1fr; align-items: start; gap: 8px; font-size: 13px; line-height: 1.6; }
+.inquiry-form .privacy-consent input[type="checkbox"] { width: 16px; height: 16px; margin: 3px 0 0; padding: 0; accent-color: var(--green); cursor: pointer; }
+.inquiry-form .privacy-consent label { display: block; margin: 0; font-size: 13px; font-weight: 500; cursor: pointer; }
+.privacy-consent label strong { color: var(--green); }
+.privacy-details { display: contents; }
+.privacy-details summary { color: #405266; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; white-space: nowrap; justify-self: end; }
+.privacy-details summary::marker { content: ""; }
+.privacy-details-content { grid-column: 1 / -1; margin-top: 8px; padding: 16px; border: 1px solid #dfe6e2; border-radius: 8px; background: #f7f9f8; color: #526273; font-size: 12px; }
+.privacy-details-content p { margin: 0 0 10px; }
+.privacy-details-content p:last-of-type { margin-bottom: 10px; }
+.privacy-details-content a { color: var(--green); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .form-submit { width: 100%; }
 .form-note { margin: 12px 0 0; color: var(--muted); font-size: 13px; text-align: center; }
 
