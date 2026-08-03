@@ -186,8 +186,10 @@ animation: hero-laser 6s linear infinite;
 .inquiry-form label { display: grid; gap: 8px; margin-bottom: 16px; font-weight: 700; font-size: 14px; }
 .inquiry-form > label { flex: 1; display: flex; flex-direction: column; gap: 8px; }
 .inquiry-form > label textarea { flex: 1; height: auto; min-height: 180px; }
-.inquiry-form input, .inquiry-form textarea { width: 100%; border: 1px solid #d8dfda; border-radius: 8px; padding: 13px 14px; outline: none; }
+.inquiry-form input, .inquiry-form textarea { width: 100%; border: 1px solid #d8dfda; border-radius: 8px; padding: 13px 14px; outline: none; background: #f8faf9; color: var(--ink); transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease; }
+.inquiry-form input::placeholder, .inquiry-form textarea::placeholder { color: #94a19a; opacity: 1; }
 .inquiry-form input:focus, .inquiry-form textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(8,114,63,.1); }
+.inquiry-form input:focus, .inquiry-form textarea:focus { background: #ffffff; }
 .privacy-consent { margin: 2px 0 18px; padding-top: 16px; border-top: 1px solid #e3e8e5; }
 .privacy-consent-row { display: grid; grid-template-columns: 18px auto 1fr; align-items: start; gap: 8px; font-size: 13px; line-height: 1.6; }
 .inquiry-form .privacy-consent input[type="checkbox"] { width: 16px; height: 16px; margin: 3px 0 0; padding: 0; accent-color: var(--green); cursor: pointer; }
