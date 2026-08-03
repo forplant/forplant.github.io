@@ -195,10 +195,11 @@ animation: hero-laser 6s linear infinite;
 .inquiry-form .privacy-consent input[type="checkbox"] { width: 16px; height: 16px; margin: 3px 0 0; padding: 0; accent-color: var(--green); cursor: pointer; }
 .inquiry-form .privacy-consent label { display: block; margin: 0; font-size: 13px; font-weight: 500; cursor: pointer; }
 .privacy-consent label strong { color: var(--green); }
-.privacy-details { display: contents; }
-.privacy-details summary { color: #405266; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; white-space: nowrap; justify-self: end; }
+.privacy-details { justify-self: end; }
+.privacy-details[open] { grid-column: 1 / -1; width: 100%; justify-self: stretch; }
+.privacy-details summary { color: #405266; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; white-space: nowrap; text-align: right; }
 .privacy-details summary::marker { content: ""; }
-.privacy-details-content { grid-column: 1 / -1; margin-top: 8px; padding: 16px; border: 1px solid #dfe6e2; border-radius: 8px; background: #f7f9f8; color: #526273; font-size: 12px; }
+.privacy-details-content { width: 100%; margin-top: 8px; padding: 16px; border: 1px solid #dfe6e2; border-radius: 8px; background: #f7f9f8; color: #526273; font-size: 12px; word-break: keep-all; overflow-wrap: break-word; }
 .privacy-details-content p { margin: 0 0 10px; }
 .privacy-details-content p:last-of-type { margin-bottom: 10px; }
 .privacy-details-content a { color: var(--green); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
