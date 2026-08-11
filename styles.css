@@ -437,9 +437,9 @@ animation: hero-laser 6s linear infinite;
     object-position: center 40% !important;
 }
 .projects-grid {
-    grid-template-columns: 0.85fr 1.4fr 0.85fr;
+    grid-template-columns: 1fr 1.65fr 1fr !important;
 }
 
 .project-card:nth-child(2) {
-    width: 100%;
+    width: 100% !important;
 }
