@@ -436,10 +436,6 @@ animation: hero-laser 6s linear infinite;
     object-fit: cover !important;
     object-position: center 40% !important;
 }
-.projects-grid {
+.portfolio-grid {
     grid-template-columns: 1fr 1.65fr 1fr !important;
-}
-
-.project-card:nth-child(2) {
-    width: 100% !important;
 }
