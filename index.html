@@ -205,7 +205,12 @@
 </div>
         </div>
 
-        <form class="inquiry-form" id="inquiry-form">
+<form
+  class="inquiry-form"
+  id="inquiry-form"
+  action="https://formspree.io/f/xrpzqboj"
+  method="POST"
+>
 <div class="field-row">
     <label>회사명 / 기관명<input type="text" name="company" autocomplete="organization" placeholder="예: (주)포플랜트"></label>
     <label>담당자명 (필수)<input type="text" name="name" autocomplete="name" required placeholder="예: 홍길동"></label>
@@ -235,9 +240,9 @@
   </div>
 </div>
 
-<button class="button button-primary form-submit" type="submit">이메일로 상담 문의하기</button>
+<button class="button button-primary form-submit" type="submit">상담 문의 접수하기</button>
 
-<p class="form-note">버튼을 누르면 이메일 작성 화면이 열립니다. 내용을 확인한 후 전송해 주세요.</p>
+<p class="form-note" id="form-status">문의 내용을 작성해 주시면 확인 후 담당자가 연락드리겠습니다.</p>
         </form>
       </div>
     </section>
