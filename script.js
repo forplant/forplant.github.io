@@ -55,18 +55,22 @@ if (form) {
         }
 
         alert('문의가 정상적으로 접수되었습니다.');
-      } else {
-        throw new Error('전송 실패');
-      }
+} else {
+  const errorData = await response.json();
 
+  const errorMessage =
+    errorData?.errors?.map(error => error.message).join('\n') ||
+    `전송 실패 (오류코드: ${response.status})`;
+
+  throw new Error(errorMessage);
+}
     } catch (error) {
       if (formStatus) {
         formStatus.textContent =
           '문의 전송 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.';
       }
 
-      alert('문의 전송에 실패했습니다. 잠시 후 다시 시도해 주세요.');
-
+alert(`문의 전송 실패:\n${error.message}`);
     } finally {
       submitButton.disabled = false;
       submitButton.textContent = originalButtonText;
