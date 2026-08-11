@@ -432,3 +432,8 @@ animation: hero-laser 6s linear infinite;
 .project-image {
   object-position: center bottom !important;
 }
+.project-card img[src="assets/project-mibu.jpg"] {
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #f4f7f5;
+}
