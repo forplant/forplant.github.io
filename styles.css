@@ -442,3 +442,6 @@ animation: hero-laser 6s linear infinite;
 .portfolio-grid {
     grid-template-columns: 1fr 1.65fr 1fr !important;
 }
+.portfolio-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
