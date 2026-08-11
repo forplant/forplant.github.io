@@ -17,24 +17,62 @@
     });
   }
 
-  const form = document.getElementById('inquiry-form');
-  if (form) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const data = new FormData(form);
-      const subject = encodeURIComponent(`[홈페이지 문의] ${data.get('company') || '회사명 미입력'} / ${data.get('name') || ''}`);
-      const body = encodeURIComponent([
-        `회사명: ${data.get('company') || ''}`,
-        `담당자: ${data.get('name') || ''}`,
-        `연락처: ${data.get('phone') || ''}`,
-        `이메일: ${data.get('email') || ''}`,
-        '',
-        '문의내용:',
-        data.get('message') || ''
-      ].join('\n'));
-      window.location.href = `mailto:forplant2024@naver.com?subject=${subject}&body=${body}`;
-    });
-  }
+const form = document.getElementById('inquiry-form');
+
+if (form) {
+  const submitButton = form.querySelector('.form-submit');
+  const formStatus = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const originalButtonText = submitButton.textContent;
+
+    submitButton.disabled = true;
+    submitButton.textContent = '전송 중...';
+
+    if (formStatus) {
+      formStatus.textContent = '문의 내용을 전송하고 있습니다.';
+    }
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+
+        if (formStatus) {
+          formStatus.textContent =
+            '문의가 정상적으로 접수되었습니다. 확인 후 담당자가 연락드리겠습니다.';
+        }
+
+        alert('문의가 정상적으로 접수되었습니다.');
+      } else {
+        throw new Error('전송 실패');
+      }
+
+    } catch (error) {
+      if (formStatus) {
+        formStatus.textContent =
+          '문의 전송 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.';
+      }
+
+      alert('문의 전송에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = originalButtonText;
+    }
+  });
+}
 })();
 const searchForm = document.getElementById("site-search");
 const searchInput = document.getElementById("site-search-input");
