@@ -436,11 +436,12 @@ animation: hero-laser 6s linear infinite;
 }
 
 .project-card img[src="assets/project-mibu-final.jpg"] {
-    object-fit: cover !important;
-    object-position: center 40% !important;
-}
-.portfolio-grid {
-    grid-template-columns: 1fr 1.65fr 1fr !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    object-fit: contain !important;
+    object-position: center center !important;
+    background: #ffffff;
 }
 .portfolio-grid {
     grid-template-columns: repeat(3, 1fr) !important;
